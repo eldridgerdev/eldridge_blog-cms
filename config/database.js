@@ -4,6 +4,7 @@ module.exports = ({ env }) => ({
     default: {
       connector: 'bookshelf',
       settings: {
+        // test
         // filename: env('DATABASE_FILENAME', '.tmp/data.db'),
         "client": "postgres",
         "host": "${process.env.DATABASE_HOST}",
