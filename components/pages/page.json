@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_test_pages",
+  "info": {
+    "name": "Page",
+    "icon": "scroll",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "SiteTitle": {
+      "type": "string",
+      "default": "Eldridge Expedition",
+      "required": false
+    },
+    "HeroText": {
+      "type": "string",
+      "default": " "
+    },
+    "HeroImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

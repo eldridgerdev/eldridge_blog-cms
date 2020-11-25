@@ -49,6 +49,10 @@
     },
     "Slug": {
       "type": "uid"
+    },
+    "Hide": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

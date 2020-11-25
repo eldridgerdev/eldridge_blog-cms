@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_pages_text_pages",
+  "info": {
+    "name": "Text Page",
+    "icon": "book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Page": {
+      "type": "component",
+      "repeatable": false,
+      "component": "pages.page",
+      "required": true
+    },
+    "Content": {
+      "type": "richtext",
+      "default": "No content"
+    }
+  }
+}

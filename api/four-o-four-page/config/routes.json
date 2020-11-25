@@ -2,24 +2,24 @@
   "routes": [
     {
       "method": "GET",
-      "path": "/404-page",
-      "handler": "404-page.find",
+      "path": "/four-o-four-page",
+      "handler": "four-o-four-page.find",
       "config": {
         "policies": []
       }
     },
     {
       "method": "PUT",
-      "path": "/404-page",
-      "handler": "404-page.update",
+      "path": "/four-o-four-page",
+      "handler": "four-o-four-page.update",
       "config": {
         "policies": []
       }
     },
     {
       "method": "DELETE",
-      "path": "/404-page",
-      "handler": "404-page.delete",
+      "path": "/four-o-four-page",
+      "handler": "four-o-four-page.delete",
       "config": {
         "policies": []
       }

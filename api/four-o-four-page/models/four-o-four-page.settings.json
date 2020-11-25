@@ -1,9 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "coming_soons",
+  "collectionName": "four_o_four_pages",
   "info": {
-    "name": "Coming Soon Page",
-    "description": ""
+    "name": "FourOFour Page"
   },
   "options": {
     "increments": true,
