@@ -1,8 +1,8 @@
 {
   "kind": "singleType",
-  "collectionName": "four_o_four_pages",
+  "collectionName": "blog_list_pages",
   "info": {
-    "name": "FourOFour Page",
+    "name": "Blog List Page",
     "description": ""
   },
   "options": {
@@ -14,9 +14,9 @@
     "Page": {
       "type": "component",
       "repeatable": false,
-      "component": "pages.text-page"
+      "component": "pages.page"
     },
-    "image": {
+    "heroImage": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -24,6 +24,14 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "heroText": {
+      "type": "string",
+      "default": " "
+    },
+    "siteTitle": {
+      "type": "string",
+      "default": "Eldridge Expedition"
     }
   }
 }
