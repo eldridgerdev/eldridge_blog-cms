@@ -1,9 +1,8 @@
 {
-  "kind": "collectionType",
-  "collectionName": "categories",
+  "kind": "singleType",
+  "collectionName": "featured_posts",
   "info": {
-    "name": "Category",
-    "description": ""
+    "name": "Featured Post"
   },
   "options": {
     "increments": true,
@@ -11,8 +10,8 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "text": {
-      "type": "string"
+    "blog_post": {
+      "model": "blog-post"
     }
   }
 }
