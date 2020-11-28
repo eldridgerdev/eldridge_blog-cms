@@ -8056,6 +8056,11 @@ public-encrypt@^4.0.0:
     randombytes "^2.0.1"
     safe-buffer "^5.1.2"
 
+puff-puff@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/puff-puff/-/puff-puff-1.0.0.tgz#1d2a7f7001b0034f2a72b9bfcb204a6c8050f78d"
+  integrity sha512-Mk0p3+3Dg3LXsl6v/eHaD/moPaLh5oAZltDpI4E5PKV0rb1aqjPcw8mYVkynQmNHxzR/bQ3RFAWM7T1qxXyN9A==
+
 pump@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/pump/-/pump-2.0.1.tgz#12399add6e4cf7526d973cbc8b5ce2e2908b3909"
