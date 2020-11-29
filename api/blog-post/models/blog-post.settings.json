@@ -45,6 +45,9 @@
     "Hide": {
       "type": "boolean",
       "default": false
+    },
+    "postNumber": {
+      "type": "integer"
     }
   }
 }
