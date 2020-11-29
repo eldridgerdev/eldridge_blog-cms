@@ -3095,6 +3095,10 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
 ckeditor5-custom-build@./ckeditor5:
   version "0.0.1"
 
+"ckeditor5-custom-build@https://github.com/eldridgerdev/custom_ckeditor5.git":
+  version "0.0.1"
+  resolved "https://github.com/eldridgerdev/custom_ckeditor5.git#030492ab7f58381cfcc029a8542ab954c9bccac3"
+
 class-utils@^0.3.5:
   version "0.3.6"
   resolved "https://registry.yarnpkg.com/class-utils/-/class-utils-0.3.6.tgz#f93369ae8b9a7ce02fd41faad0ca83033190c463"
