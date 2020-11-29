@@ -85,6 +85,11 @@ const Editor = ({ onChange, name, value }) => {
                     value: null
                 },
                 {
+                  name: 'imageResize:47',
+                  label: '47%',
+                  value: '47'
+                },
+                {
                     name: 'imageResize:50',
                     label: '50%',
                     value: '50'
