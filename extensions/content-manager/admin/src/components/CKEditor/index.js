@@ -1,9 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { CKEditor } from '@ckeditor/ckeditor5-react';
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+// import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import CustomEditor from 'ckeditor5-custom-build/build/ckeditor';
+// import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import styled from 'styled-components';
 import { CloudinaryUnsigned } from 'puff-puff/CKEditor';
+// import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
+// import Image from '@ckeditor/ckeditor5-image/src/image';
+// import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
+// import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
+// import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
+// import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
+// import LinkImage from '@ckeditor/ckeditor5-link/src/linkimage';
 
 const Wrapper = styled.div`
   .ck-editor__main {
@@ -24,10 +33,79 @@ const Editor = ({ onChange, name, value }) => {
   return (
     <Wrapper>
       <CKEditor
-        editor={ClassicEditor}
+        editor={CustomEditor.Editor}
         data={value}
         config={{
-          extraPlugins: [imagePluginFactory]
+          extraPlugins: [imagePluginFactory],// Configure the available styles.
+          // plugins: [ Image, ImageToolbar, ImageCaption, ImageStyle, ImageResize, LinkImage ],
+          
+          toolbar: {
+            items: [
+              'heading',
+              '|',
+              'fontSize',
+              'bold',
+              'italic',
+              'horizontalLine',
+              'underline',
+              '|',
+              'bulletedList',
+              'numberedList',
+              '|',
+              'alignment',
+              'indent',
+              'outdent',
+              '|',
+              'link',
+              'imageUpload',
+              'blockQuote',
+              'insertTable',
+              'mediaEmbed',
+              'undo',
+              'redo'
+            ]
+          },
+          table: {
+            contentToolbar: [
+              'tableColumn',
+              'tableRow',
+              'mergeTableCells'
+            ]
+          },
+          image: {
+            styles: [
+                'alignLeft', 'alignCenter', 'alignRight'
+            ],
+
+            // Configure the available image resize options.
+            resizeOptions: [
+                {
+                    name: 'imageResize:original',
+                    label: 'Original',
+                    value: null
+                },
+                {
+                    name: 'imageResize:50',
+                    label: '50%',
+                    value: '50'
+                },
+                {
+                    name: 'imageResize:75',
+                    label: '75%',
+                    value: '75'
+                }
+              ],
+
+              // You need to configure the image toolbar, too, so it shows the new style
+              // buttons as well as the resize buttons.
+              toolbar: [
+                  'imageStyle:alignLeft', 'imageStyle:alignCenter', 'imageStyle:alignRight',
+                  '|',
+                  'imageResize',
+                  '|',
+                  'imageTextAlternative'
+              ]
+          }
         }}
         onChange={(event, editor) => {
           const data = editor.getData();
