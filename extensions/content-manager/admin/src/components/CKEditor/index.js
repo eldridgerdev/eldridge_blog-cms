@@ -74,28 +74,28 @@ const Editor = ({ onChange, name, value }) => {
           },
           image: {
             // Configure the available image resize options.
-            resizeOptions: [
-                {
-                    name: 'imageResize:original',
-                    label: 'Original',
-                    value: null
-                },
-                {
-                  name: 'imageResize:45',
-                  label: '45%',
-                  value: '45'
-                },
-                {
-                    name: 'imageResize:50',
-                    label: '50%',
-                    value: '50'
-                },
-                {
-                    name: 'imageResize:75',
-                    label: '75%',
-                    value: '75'
-                }
-              ],
+            // resizeOptions: [
+            //     {
+            //         name: 'imageResize:original',
+            //         label: 'Original',
+            //         value: null
+            //     },
+            //     // {
+            //     //   name: 'imageResize:45',
+            //     //   label: '45%',
+            //     //   value: '45'
+            //     // },
+            //     {
+            //         name: 'imageResize:50',
+            //         label: '50%',
+            //         value: '50'
+            //     },
+            //     {
+            //         name: 'imageResize:75',
+            //         label: '75%',
+            //         value: '75'
+            //     }
+            //   ],
               
               styles: [
                 'alignLeft', 'alignCenter', 'alignRight'
@@ -106,7 +106,7 @@ const Editor = ({ onChange, name, value }) => {
               toolbar: [
                   'imageStyle:alignLeft', 'imageStyle:alignCenter', 'imageStyle:alignRight',
                   '|',
-                  'imageResize',
+                  // 'imageResize',
                   '|',
                   'imageTextAlternative'
               ]
