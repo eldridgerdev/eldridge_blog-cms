@@ -73,10 +73,6 @@ const Editor = ({ onChange, name, value }) => {
             ]
           },
           image: {
-            styles: [
-                'alignLeft', 'alignCenter', 'alignRight'
-            ],
-
             // Configure the available image resize options.
             resizeOptions: [
                 {
@@ -99,6 +95,10 @@ const Editor = ({ onChange, name, value }) => {
                     label: '75%',
                     value: '75'
                 }
+              ],
+              
+              styles: [
+                'alignLeft', 'alignCenter', 'alignRight'
               ],
 
               // You need to configure the image toolbar, too, so it shows the new style
