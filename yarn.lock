@@ -3094,12 +3094,7 @@ cipher-base@^1.0.0, cipher-base@^1.0.1, cipher-base@^1.0.3:
 
 "ckeditor5-custom-build@git+https://eldridgerdev:71fff54ab89db52c47174e35e4c6f2089d972ef2@github.com/eldridgerdev/custom_ckeditor5.git":
   version "0.0.1"
-  uid "030492ab7f58381cfcc029a8542ab954c9bccac3"
   resolved "git+https://eldridgerdev:71fff54ab89db52c47174e35e4c6f2089d972ef2@github.com/eldridgerdev/custom_ckeditor5.git#030492ab7f58381cfcc029a8542ab954c9bccac3"
-
-"ckeditor5-custom-build@https://github.com/eldridgerdev/custom_ckeditor5.git":
-  version "0.0.1"
-  resolved "https://github.com/eldridgerdev/custom_ckeditor5.git#030492ab7f58381cfcc029a8542ab954c9bccac3"
 
 class-utils@^0.3.5:
   version "0.3.6"

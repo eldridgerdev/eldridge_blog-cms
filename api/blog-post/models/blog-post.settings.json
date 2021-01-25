@@ -48,6 +48,10 @@
     },
     "postNumber": {
       "type": "integer"
+    },
+    "comments": {
+      "via": "blog",
+      "collection": "comments"
     }
   }
 }

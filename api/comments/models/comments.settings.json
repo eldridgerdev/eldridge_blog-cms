@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "comments",
+  "info": {
+    "name": "Comments",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "username": {
+      "type": "string",
+      "required": true
+    },
+    "blog": {
+      "model": "blog-post",
+      "via": "comments"
+    },
+    "commentText": {
+      "type": "text",
+      "maxLength": 250
+    },
+    "replys": {
+      "collection": "replys",
+      "via": "comment"
+    },
+    "simpleReply": {
+      "type": "text"
+    }
+  }
+}

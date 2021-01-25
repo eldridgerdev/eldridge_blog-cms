@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "replys",
+  "info": {
+    "name": "Replys"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "username": {
+      "type": "string",
+      "required": true
+    },
+    "commentText": {
+      "type": "string",
+      "required": true
+    },
+    "comment": {
+      "via": "replys",
+      "model": "comments"
+    }
+  }
+}
