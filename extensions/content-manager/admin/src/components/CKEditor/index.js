@@ -1,18 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { CKEditor } from '@ckeditor/ckeditor5-react';
-// import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import CustomEditor from 'ckeditor5-custom-build/build/ckeditor';
-// import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
+// import CustomEditor from 'ckeditor5-custom-build/build/ckeditor';
 import styled from 'styled-components';
 import { CloudinaryUnsigned } from 'puff-puff/CKEditor';
-// import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
-// import Image from '@ckeditor/ckeditor5-image/src/image';
-// import ImageToolbar from '@ckeditor/ckeditor5-image/src/imagetoolbar';
-// import ImageCaption from '@ckeditor/ckeditor5-image/src/imagecaption';
-// import ImageStyle from '@ckeditor/ckeditor5-image/src/imagestyle';
-// import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
-// import LinkImage from '@ckeditor/ckeditor5-link/src/linkimage';
+// import Markdown from '@ckeditor/ckeditor5-markdown-gfm'
 
 const Wrapper = styled.div`
   .ck-editor__main {
@@ -33,10 +26,11 @@ const Editor = ({ onChange, name, value }) => {
   return (
     <Wrapper>
       <CKEditor
-        editor={CustomEditor.Editor}
+        placeholder="Enter Content"
+        editor={CustomEditor}
         data={value}
         config={{
-          extraPlugins: [imagePluginFactory],// Configure the available styles.
+          extraPlugins: [imagePluginFactory],
           // plugins: [ Image, ImageToolbar, ImageCaption, ImageStyle, ImageResize, LinkImage ],
           
           toolbar: {
@@ -45,6 +39,7 @@ const Editor = ({ onChange, name, value }) => {
               '|',
               'fontSize',
               'bold',
+              '|',
               'italic',
               'horizontalLine',
               'underline',

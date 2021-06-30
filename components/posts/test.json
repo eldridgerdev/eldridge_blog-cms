@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_posts_tests",
+  "info": {
+    "name": "test",
+    "icon": "audio-description"
+  },
+  "options": {},
+  "attributes": {
+    "test": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_posts_images",
+  "info": {
+    "name": "Image",
+    "icon": "camera"
+  },
+  "options": {},
+  "attributes": {
+    "Media": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

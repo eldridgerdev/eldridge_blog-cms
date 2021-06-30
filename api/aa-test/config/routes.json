@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/aa-test",
+      "handler": "aa-test.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/aa-test",
+      "handler": "aa-test.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/aa-test",
+      "handler": "aa-test.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html><!--
-	Copyright (c) 2014-2020, CKSource - Frederico Knabben. All rights reserved.
+	Copyright (c) 2014-2021, CKSource - Frederico Knabben. All rights reserved.
 	This file is licensed under the terms of the MIT License (see LICENSE.md).
 -->
 
@@ -54,32 +54,6 @@
 						are expressed differently in <strong>different language mindsets</strong>.
 						<Here>is a sample from the the experiment:</Here>
 					</p>
-					<table>
-						<thead>
-							<tr>
-								<th></th>
-								<th>English</th>
-								<th>Japanese</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Real friends should</td>
-								<td>Be very frank</td>
-								<td>Help each other</td>
-							</tr>
-							<tr>
-								<td>I will probably become</td>
-								<td>A teacher</td>
-								<td>A housewife</td>
-							</tr>
-							<tr>
-								<td>When there is a conflict with family</td>
-								<td>I do what I want</td>
-								<td>It's a time of great unhappiness</td>
-							</tr>
-						</tbody>
-					</table>
 					<p>
 						More recent <a href="https://books.google.pl/books?id=1LMhWGHGkRUC">studies</a> show, the language a person speaks affects
 						their cognition, behaviour, emotions and hence <strong>their personality</strong>.
@@ -96,43 +70,13 @@
 		<p><a href="https://ckeditor.com/ckeditor-5/" target="_blank" rel="noopener">CKEditor 5</a>
 			– Rich text editor of tomorrow, available today
 		</p>
-		<p>Copyright © 2003-2020,
+		<p>Copyright © 2003-2021,
 			<a href="https://cksource.com/" target="_blank" rel="noopener">CKSource</a>
 			– Frederico Knabben. All rights reserved.
 		</p>
 	</footer>
 	<script src="../build/ckeditor.js"></script>
-	<script>
-		const watchdog = new CKSource.Watchdog();
-		
-		window.watchdog = watchdog;
-		
-		watchdog.setCreator( ( element, config ) => {
-			return CKSource.Editor
-				.create( element, config )
-				.then( editor => {
-					
-					
-					
-		
-					
-					
-					
-		
-					return editor;
-				} )
-		} );
-		
-		watchdog.setDestructor( editor => {
-			
-			
-		
-			return editor.destroy();
-		} );
-		
-		watchdog.on( 'error', handleError );
-		
-		watchdog
+	<script>ClassicEditor
 			.create( document.querySelector( '.editor' ), {
 				
 				toolbar: {
@@ -140,26 +84,27 @@
 						'heading',
 						'|',
 						'fontSize',
+						'fontColor',
 						'bold',
 						'italic',
-						'horizontalLine',
+						'strikethrough',
 						'underline',
+						'subscript',
+						'superscript',
 						'|',
+						'horizontalLine',
+						'link',
 						'bulletedList',
 						'numberedList',
 						'|',
-						'alignment',
-						'indent',
 						'outdent',
+						'indent',
 						'|',
-						'link',
 						'imageUpload',
 						'blockQuote',
-						'insertTable',
 						'mediaEmbed',
 						'undo',
-						'redo',
-						'CKFinder'
+						'redo'
 					]
 				},
 				language: 'en',
@@ -170,24 +115,26 @@
 						'imageStyle:side'
 					]
 				},
-				table: {
-					contentToolbar: [
-						'tableColumn',
-						'tableRow',
-						'mergeTableCells'
-					]
-				},
 				licenseKey: '',
 				
+				
 			} )
-			.catch( handleError );
+			.then( editor => {
+				window.editor = editor;
 		
-		function handleError( error ) {
-			console.error( 'Oops, something went wrong!' );
-			console.error( 'Please, report the following error on https://github.com/ckeditor/ckeditor5/issues with the build id and the error stack trace:' );
-			console.warn( 'Build id: dltw131m9o91-337rc2sxk9e4' );
-			console.error( error );
-		}
+				
+				
+				
 		
+				
+				
+				
+			} )
+			.catch( error => {
+				console.error( 'Oops, something went wrong!' );
+				console.error( 'Please, report the following error on https://github.com/ckeditor/ckeditor5/issues with the build id and the error stack trace:' );
+				console.warn( 'Build id: xgg41thae3wq-ffccldyp4tyx' );
+				console.error( error );
+			} );
 	</script>
 </body>

@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "aa_tests",
+  "info": {
+    "name": "AATest",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Content": {
+      "type": "dynamiczone",
+      "components": [
+        "posts.text",
+        "posts.image",
+        "posts.test"
+      ]
+    }
+  }
+}
