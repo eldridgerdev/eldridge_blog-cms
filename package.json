@@ -15,7 +15,7 @@
     "@ckeditor/ckeditor5-image": "^23.1.0",
     "@ckeditor/ckeditor5-link": "^23.1.0",
     "@ckeditor/ckeditor5-react": "3.0.0",
-    "ckeditor5-custom-build": "git+https://eldridgerdev:71fff54ab89db52c47174e35e4c6f2089d972ef2@github.com/eldridgerdev/custom_ckeditor5.git",
+    "ckeditor5-custom-build": "file:./ckeditor5/build/ckeditor",
     "knex": "<0.20.0",
     "pg": "^8.5.1",
     "pg-connection-string": "2.4.0",
