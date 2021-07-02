@@ -1,6 +1,6 @@
 module.exports = ({ env }) => ({
     host: env('HOST', process.env.HOST || '0.0.0.0'),
-    port: process.env.PORT || 1337, //env.int('PORT', process.env.PORT || 1337),
+    port: process.env.PORT || 8082, //env.int('PORT', process.env.PORT || 1338),
     "production": true,
     "proxy": {
         "enabled": false
