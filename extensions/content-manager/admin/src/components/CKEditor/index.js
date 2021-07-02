@@ -33,7 +33,7 @@ const Editor = ({ onChange, name, value }) => {
   return (
     <Wrapper>
       <CKEditor
-        editor={CustomEditor.Editor}
+        editor={CustomEditor}
         data={value}
         config={{
           extraPlugins: [imagePluginFactory],// Configure the available styles.
@@ -43,27 +43,33 @@ const Editor = ({ onChange, name, value }) => {
             items: [
               'heading',
               '|',
-              'fontSize',
               'bold',
               'italic',
-              'horizontalLine',
-              'underline',
-              '|',
+              'link',
               'bulletedList',
               'numberedList',
               '|',
               'alignment',
-              'indent',
               'outdent',
+              'indent',
               '|',
-              'link',
+              'horizontalLine',
               'imageUpload',
               'blockQuote',
               'insertTable',
               'mediaEmbed',
               'undo',
-              'redo'
-            ]
+              'redo',
+              '|',
+              'findAndReplace',
+              '-',
+              'fontBackgroundColor',
+              'fontSize',
+              'fontFamily',
+              'fontColor',
+              'strikethrough',
+              'underline'
+            ],
           },
           table: {
             contentToolbar: [

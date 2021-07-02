@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_posts_blog_post_images",
+  "info": {
+    "name": "BlogPostImage",
+    "icon": "camera",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "ImageCaption": {
+      "type": "string"
+    },
+    "ImageWidth": {
+      "type": "enumeration",
+      "enum": [
+        "FiftyPercent",
+        "SeventyFivePercent",
+        "OneHundredPercent"
+      ],
+      "default": "FiftyPercent",
+      "required": false
+    }
+  }
+}

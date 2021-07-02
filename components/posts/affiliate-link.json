@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_posts_affiliate_links",
+  "info": {
+    "name": "AffiliateLink",
+    "icon": "dollar-sign",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "AffiliateLinkText": {
+      "type": "text",
+      "default": "<ul><li>PASTE_LINK_HERE</li></ul>"
+    }
+  }
+}
