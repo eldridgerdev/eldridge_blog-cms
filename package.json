@@ -12,7 +12,6 @@
   "devDependencies": {},
   "dependencies": {
     "@ckeditor/ckeditor5-react": "3.0.0",
-    "ckeditor5-custom-build": "file:./ckeditor5/build/ckeditor",
     "knex": "<0.20.0",
     "pg": "^8.5.1",
     "pg-connection-string": "2.4.0",
