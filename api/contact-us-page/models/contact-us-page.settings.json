@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_us_pages",
+  "info": {
+    "name": "Contact Us Page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Page": {
+      "type": "component",
+      "repeatable": false,
+      "component": "pages.text-page"
+    }
+  }
+}
