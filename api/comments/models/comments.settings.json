@@ -16,8 +16,8 @@
       "required": true
     },
     "blog": {
-      "via": "comments",
-      "model": "blog-post"
+      "model": "blog-post",
+      "via": "comments"
     },
     "commentText": {
       "type": "text",
@@ -29,6 +29,9 @@
     },
     "simpleReply": {
       "type": "text"
+    },
+    "email": {
+      "type": "email"
     }
   }
 }
