@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_posts_non_affliliate_links",
+  "info": {
+    "name": "Non-Affliliate Link",
+    "icon": "fire-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "LinkText": {
+      "type": "text",
+      "private": true,
+      "default": "This doesn't do anything yet, but I'll find a way to add links that aren't affiliates later. Paste here for now and I'll update it when I implement it."
+    }
+  }
+}

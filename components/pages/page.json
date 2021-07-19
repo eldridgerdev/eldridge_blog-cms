@@ -1,7 +1,7 @@
 {
   "collectionName": "components_test_pages",
   "info": {
-    "name": "Page",
+    "name": "PageData",
     "icon": "scroll",
     "description": ""
   },
@@ -14,7 +14,7 @@
     },
     "HeroText": {
       "type": "string",
-      "default": " "
+      "default": " Deprecated"
     },
     "HeroImage": {
       "model": "file",

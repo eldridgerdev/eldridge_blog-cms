@@ -10,6 +10,20 @@
     "AffiliateLinkText": {
       "type": "text",
       "default": "<ul><li>PASTE_LINK_HERE</li></ul>"
+    },
+    "InternalLinks": {
+      "type": "richtext",
+      "default": "Paste the links here and I'll update it with the correct affiliate links when I get a chance.",
+      "private": true
+    },
+    "Hide": {
+      "type": "boolean",
+      "default": true,
+      "private": false
+    },
+    "BlockText": {
+      "type": "text",
+      "default": "(Not implemented) \"We earn a small commision if you purchase a recommended product through our affiliate link\""
     }
   }
 }
