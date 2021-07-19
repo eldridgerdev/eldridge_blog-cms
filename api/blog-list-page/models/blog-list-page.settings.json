@@ -11,11 +11,6 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "Page": {
-      "type": "component",
-      "repeatable": false,
-      "component": "pages.page"
-    },
     "heroImage": {
       "model": "file",
       "via": "related",
@@ -27,7 +22,7 @@
     },
     "heroText": {
       "type": "string",
-      "default": " "
+      "default": " Deprecated"
     },
     "siteTitle": {
       "type": "string",

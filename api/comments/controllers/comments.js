@@ -22,6 +22,18 @@ module.exports = {
         } else {
             entity = await strapi.services.comments.create(ctx.request.body);
         }
+
+        await strapi.plugins['email'].services.email.send({
+            to: 'eldridge@eldridgeexpedition.com',
+            from : 'notifications@eldridgeexpedition.com',
+            subject: 'A New comment has been created!',
+            text: `
+                The comment #${entity.id} has been created.
+
+                Comment:
+                ${entity.content}
+            `
+        })
         return sanitizeEntity(entity, { model: strapi.models.comments });
     }
 

@@ -16,8 +16,8 @@
       "required": true
     },
     "blog": {
-      "model": "blog-post",
-      "via": "comments"
+      "via": "comments",
+      "model": "blog-post"
     },
     "commentText": {
       "type": "text",

@@ -50,15 +50,16 @@
       "type": "integer"
     },
     "comments": {
-      "via": "blog",
-      "collection": "comments"
+      "collection": "comments",
+      "via": "blog"
     },
     "BlogContent": {
       "type": "dynamiczone",
       "components": [
         "posts.blog-post-text",
         "posts.blog-post-image",
-        "posts.affiliate-link"
+        "posts.affiliate-link",
+        "posts.non-affliliate-link"
       ]
     }
   }
