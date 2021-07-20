@@ -50,8 +50,8 @@
       "type": "integer"
     },
     "comments": {
-      "collection": "comments",
-      "via": "blog"
+      "via": "blog",
+      "collection": "comments"
     },
     "BlogContent": {
       "type": "dynamiczone",
