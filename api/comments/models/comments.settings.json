@@ -16,22 +16,20 @@
       "required": true
     },
     "blog": {
-      "via": "comments",
-      "model": "blog-post"
+      "model": "blog-post",
+      "via": "comments"
     },
     "commentText": {
       "type": "text",
       "maxLength": 250
     },
-    "replys": {
-      "collection": "replys",
-      "via": "comment"
-    },
-    "simpleReply": {
-      "type": "text"
-    },
     "email": {
       "type": "email"
+    },
+    "reply": {
+      "type": "component",
+      "repeatable": false,
+      "component": "comments.reply"
     }
   }
 }
