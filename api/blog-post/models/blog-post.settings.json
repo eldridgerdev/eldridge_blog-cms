@@ -50,8 +50,8 @@
       "type": "integer"
     },
     "comments": {
-      "via": "blog",
-      "collection": "comments"
+      "collection": "comments",
+      "via": "blog"
     },
     "BlogContent": {
       "type": "dynamiczone",
@@ -61,6 +61,14 @@
         "posts.affiliate-link",
         "posts.non-affliliate-link"
       ]
+    },
+    "categories": {
+      "collection": "category"
+    },
+    "meta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta.meta-group"
     }
   }
 }

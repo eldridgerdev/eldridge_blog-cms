@@ -16,6 +16,11 @@
     "Content": {
       "type": "richtext",
       "default": "No content"
+    },
+    "meta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "meta.meta-group"
     }
   }
 }

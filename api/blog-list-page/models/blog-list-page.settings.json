@@ -27,6 +27,11 @@
     "siteTitle": {
       "type": "string",
       "default": "Eldridge Expedition"
+    },
+    "meta": {
+      "type": "component",
+      "repeatable": true,
+      "component": "meta.meta-group"
     }
   }
 }

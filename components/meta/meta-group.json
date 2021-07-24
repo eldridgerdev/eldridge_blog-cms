@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_meta_meta_groups",
+  "info": {
+    "name": "meta-group",
+    "icon": "rocket"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
