@@ -69,6 +69,10 @@
       "type": "component",
       "repeatable": false,
       "component": "meta.meta-group"
+    },
+    "previewOnly": {
+      "type": "boolean",
+      "default": true
     }
   }
 }

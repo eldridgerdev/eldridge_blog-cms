@@ -16,13 +16,13 @@
       "repeatable": false,
       "component": "pages.page"
     },
-    "description": {
-      "type": "richtext"
-    },
-    "meta": {
+    "metaGroup": {
       "type": "component",
       "repeatable": false,
       "component": "meta.meta-group"
+    },
+    "description": {
+      "type": "text"
     }
   }
 }

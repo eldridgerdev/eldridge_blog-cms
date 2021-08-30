@@ -28,7 +28,7 @@
       "type": "string",
       "default": "Eldridge Expedition"
     },
-    "meta": {
+    "metaGroup": {
       "type": "component",
       "repeatable": true,
       "component": "meta.meta-group"
