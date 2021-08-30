@@ -70,9 +70,9 @@
       "repeatable": false,
       "component": "meta.meta-group"
     },
-    "previewOnly": {
+    "ppreviewOnly": {
       "type": "boolean",
-      "default": true
+      "default": false
     }
   }
 }
