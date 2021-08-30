@@ -30,7 +30,7 @@
     },
     "metaGroup": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "meta.meta-group"
     }
   }

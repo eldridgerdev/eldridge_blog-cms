@@ -65,7 +65,7 @@
     "categories": {
       "collection": "category"
     },
-    "meta": {
+    "metaGroup": {
       "type": "component",
       "repeatable": false,
       "component": "meta.meta-group"
