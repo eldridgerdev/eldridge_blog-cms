@@ -28,7 +28,7 @@
         "SeventyFivePercent",
         "OneHundredPercent"
       ],
-      "default": "FiftyPercent",
+      "default": "OneHundredPercent",
       "required": false
     }
   }

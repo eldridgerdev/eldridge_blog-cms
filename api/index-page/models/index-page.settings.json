@@ -23,6 +23,10 @@
     },
     "description": {
       "type": "text"
+    },
+    "multiPost": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
