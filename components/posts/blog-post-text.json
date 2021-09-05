@@ -2,12 +2,14 @@
   "collectionName": "components_posts_blog_post_texts",
   "info": {
     "name": "BlogPostText",
-    "icon": "edit"
+    "icon": "edit",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "Text": {
-      "type": "richtext"
+      "type": "richtext",
+      "default": "Placeholder"
     }
   }
 }
