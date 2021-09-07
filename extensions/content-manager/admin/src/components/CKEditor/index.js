@@ -71,6 +71,9 @@ const Editor = ({ onChange, name, value }) => {
               'underline'
             ],
           },
+          mediaEmbed: {
+					  previewsInData: true
+				  },
           table: {
             contentToolbar: [
               'tableColumn',
